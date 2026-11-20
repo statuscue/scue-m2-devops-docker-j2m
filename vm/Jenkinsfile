@@ -1,0 +1,14 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            environment {
+                AZURE_USER = credentials('azure-user')
+                AZURE_PASS = credentials('azure-pass')
+            }
+            steps {
+                
+            }
+        }
+    }
+}
